@@ -1,0 +1,14 @@
+<!--pages/landing/landing.wxml-->
+<view class="banner" style="height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
+  <view class="container">
+    <text class="h1"> Welcome to FMC </text>
+    <navigator class="btn"
+      url="/pages/stories/stories"
+      style="position: fixed; bottom: 500rpx;"
+    > 
+      Click me! 
+    </navigator>
+  </view>
+</view>
+
+
