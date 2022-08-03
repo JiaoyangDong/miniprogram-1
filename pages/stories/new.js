@@ -1,5 +1,4 @@
-// pages/stories/stories.js
-const app = getApp()
+// pages/stories/new.js
 Page({
 
   /**
@@ -13,9 +12,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad(options) {
-    const stories  = app.globalData.stories
-    this.setData({stories: stories})
+
   },
+
   /**
    * Lifecycle function--Called when page is initially rendered
    */

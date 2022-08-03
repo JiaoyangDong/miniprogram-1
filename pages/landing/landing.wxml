@@ -3,7 +3,7 @@
   <view class="container">
     <text class="h1"> Welcome to FMC </text>
     <navigator class="btn"
-      url="/pages/stories/stories"
+      url="/pages/stories/index"
       style="position: fixed; bottom: 500rpx;"
     > 
       Click me! 

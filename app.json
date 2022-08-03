@@ -2,7 +2,8 @@
   "pages":[
     "pages/landing/landing",
     "pages/stories/index",
-    "pages/stories/show"
+    "pages/stories/show",
+    "pages/stories/new"
   ],
   "window":{
     "backgroundTextStyle":"light",

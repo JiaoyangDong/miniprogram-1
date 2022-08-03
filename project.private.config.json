@@ -8,7 +8,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/stories/stories",
+          "pathName": "pages/stories/index",
           "query": "",
           "launchMode": "default",
           "scene": null

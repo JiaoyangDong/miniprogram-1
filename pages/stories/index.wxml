@@ -1,2 +1,12 @@
-<!--pages/stories/index.wxml-->
-<text>pages/stories/index.wxml</text>
+<!--pages/stories/stories.wxml-->
+<scroll-view scroll-y="true" class="banner">
+  <view class="container">
+    <text class="h2">Checkout these stories</text>
+    <!-- cards -->
+    <view wx:for="{{stories}}" class="card" style="display: flex;">
+      <text class="h2" style="color:black"> {{item.title}} </text>
+      <text> -- {{item.author}} </text>
+    </view>
+  </view>
+
+</scroll-view>
