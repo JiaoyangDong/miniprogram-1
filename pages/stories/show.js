@@ -1,5 +1,5 @@
 // pages/stories/show.js
-const app = getApp()
+// const app = getApp()
 
 Page({
 
@@ -14,8 +14,23 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad(options) {
-    const story = app.globalData.stories[Number.parseInt(options["index"], 10)]
-    console.log(story)
+    // static data
+    // const story = app.globalData.stories[Number.parseInt(options["index"], 10)]
+    // console.log(story)
+    console.log(options)
+
+    let page = this
+    wx.request({
+      url: `http://localhost:3000/api/v1/stories/${options.index}`,
+      method: "GET",
+      success(res){
+        const story = res.data
+        console.log(story)
+        page.setData({
+          story: story
+        })
+      }
+    })
   },
 
   /**

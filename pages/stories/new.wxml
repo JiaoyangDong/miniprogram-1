@@ -1,18 +1,18 @@
 <!--pages/stories/new.wxml-->
 <form catchsubmit="formSubmit" catchreset="formReset">
-  <view class="page-section">
-    <view class="page-section-title">input</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__bd" style="margin: 30rpx 0" >
-          <input class="weui-input" name="input" placeholder="这是一个输入框" />
-        </view>
-      </view>
-    </view>
+  <!-- form info -->
+  <view class="form-area">
+    <view class="">Your name:</view>
+    <input class="input-box" name="author" placeholder="Your name:"/>
+    <view class="">Title</view>
+    <input class="input-box" name="title" placeholder="Your title"/>
+    <view class="">Content</view>
+    <textarea class="input-box" name="input" placeholder="Enter your story here">
+    </textarea>
   </view>
 
-  <view class="btn-area">
-    <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+  <view class="btn-area" >
+    <button style="margin: 30rpx 0; " type="primary" formType="submit">Submit</button>
     <button style="margin: 30rpx 0" formType="reset">Reset</button>
   </view>
 </form>

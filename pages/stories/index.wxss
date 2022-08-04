@@ -3,33 +3,4 @@
   overflow: hidden;
   height: 140rpx;
   width: 500rpx;
-  padding: 40rpx;
-  margin: 40rpx;
-  border-radius: 16rpx;
-  background:rgba(256, 256, 256, 0.55);
-  box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
-  /* display: flex; */
-  /* align-items: center; */
 }
-.card:hover {
-  box-shadow: 0 0 30rpx rgba(50, 50, 50, 0.5);
-}
-
-.card .h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card text {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-
-/* .card .align-right {
-  text-align: right;
-} */

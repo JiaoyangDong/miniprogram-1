@@ -2,20 +2,26 @@
 const app = getApp()
 Page({
 
-  /**
-   * Page initial data
-   */
   data: {
-    text: "ori"
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad(options) {
     console.log("load")
-    const stories  = app.globalData.stories
-    this.setData({stories: stories})
+    // static data: 
+    // const stories  = app.globalData.stories
+    // this.setData({stories: stories})
+    let page = this
+    wx.request({
+      url: "http://localhost:3000/api/v1/stories",
+      method: "GET",
+      success(res) {
+        // console.log(res)
+        const stories = res.data
+        page.setData({
+          stories: stories
+        })
+      }
+    })
   },
   /**
    * Lifecycle function--Called when page is initially rendered

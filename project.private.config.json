@@ -1,7 +1,8 @@
 {
   "projectname": "FMC",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false
   },
   "condition": {
     "miniprogram": {
@@ -16,6 +17,13 @@
         {
           "name": "new",
           "pathName": "pages/stories/new",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "show",
+          "pathName": "pages/stories/show?index=1",
           "query": "",
           "launchMode": "default",
           "scene": null

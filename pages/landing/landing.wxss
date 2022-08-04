@@ -1,15 +1,1 @@
 /* pages/landing/landing.wxss */
-.container {
-  width: 150rpx;
-  margin: 0 auto;
-}
-
-.btn {
-  background-image: linear-gradient(60deg, #014e8de8, #f8a63ae8);
-  border-radius: 12rpx;
-  padding: 20rpx 40rpx;
-  width: 200rpx;
-  color: white;
-  text-align: center;
-  /* box-shadow:; */
-}

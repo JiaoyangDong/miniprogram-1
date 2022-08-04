@@ -1,11 +1,17 @@
 <!--pages/stories/stories.wxml-->
 <scroll-view scroll-y="true" class="banner">
   <view class="container">
-    <text class="h2">Checkout these stories</text>
+    <text class="h2" style="padding: 60rpx 0">Checkout these stories</text>
     <!-- cards -->
-    <view bindtap="goToStory" wx:if="{{stories.length}}" wx:for="{{stories}}" wx:key="title" data-index="{{index}}" class="card">
+    <view bindtap="goToStory" 
+          wx:if="{{stories.length}}" 
+          wx:for="{{stories}}" 
+          wx:key="title" 
+          data-index="{{item.id}}" 
+          class="card"
+          style="position: relative;">
       <text class="h2" style="color:black"> {{item.title}} </text>
-      <view><text style="justify-content: end ;"> -- {{item.author}} </text></view>
+      <text style="position: absolute; bottom: 10rpx; right: 20rpx"> -- {{item.author}} </text>
     </view>
     <view wx:if="{{!stories.length}}">
       <view class="card"> There are no stories. Create one below. </view>
