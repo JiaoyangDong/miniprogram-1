@@ -7,7 +7,7 @@
     <view class="">Title</view>
     <input class="input-box" name="title" placeholder="Your title"/>
     <view class="">Content</view>
-    <textarea class="input-box" name="input" placeholder="Enter your story here">
+    <textarea class="input-box" name="content" placeholder="Enter your story here">
     </textarea>
   </view>
 

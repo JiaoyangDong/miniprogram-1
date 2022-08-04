@@ -65,6 +65,31 @@ Page({
   },
   formSubmit(e) {
     console.log("form submitted")
-    
+    const story = e.detail.value
+    console.log(story)
+    wx.request({
+      url: 'http://localhost:3000/api/v1/stories',
+      method: 'POST',
+      data: story,
+      success(res) {
+        console.log(res)
+        if (res.statusCode === 201 ) {
+          wx.redirectTo({
+            url: '/pages/stories/index',
+          })
+        } else {
+          console.log(res)
+          wx.showModal({
+            title: 'Error!',
+            content: res.data.errors.join('; '),
+            showCancel: false
+          })
+        }
+      },
+      fail(res) {
+        console.log("fails")
+        console.log(res)
+      }
+    })
   }
 })
