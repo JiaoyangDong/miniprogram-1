@@ -3,9 +3,12 @@
   <view class="container">
     <text class="h2">Checkout these stories</text>
     <!-- cards -->
-    <view wx:for="{{stories}}" class="card" style="display: flex;">
+    <view bindtap="goToStory" wx:if="{{stories.length}}" wx:for="{{stories}}" wx:key="title" data-index="{{index}}" class="card">
       <text class="h2" style="color:black"> {{item.title}} </text>
-      <text> -- {{item.author}} </text>
+      <view><text style="justify-content: end ;"> -- {{item.author}} </text></view>
+    </view>
+    <view wx:if="{{!stories.length}}">
+      <view class="card"> There are no stories. Create one below. </view>
     </view>
   </view>
 

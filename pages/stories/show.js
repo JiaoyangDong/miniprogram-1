@@ -1,4 +1,6 @@
 // pages/stories/show.js
+const app = getApp()
+
 Page({
 
   /**
@@ -12,7 +14,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad(options) {
-
+    const story = app.globalData.stories[Number.parseInt(options["index"], 10)]
+    console.log(story)
   },
 
   /**

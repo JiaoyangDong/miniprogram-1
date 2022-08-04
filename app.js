@@ -15,12 +15,12 @@ App({
   },
   globalData: {
     userInfo: null,
-    stories: [
-      {author: "zora", title: "Why won't my title center?"},
-      {author:"zora", title: "css override is driving me crazy"},
-      {author:"Aggy", title: "Wechat devtool is not behaving."},
-      {author:"Lilian", title: "!%s^&W2i...."},
-      {author:"Lilian", title: "!%s^&W2i...."}
-    ]
+    // stories: [
+    //   {author: "zora", title: "Why won't my title center?"},
+    //   {author:"zora", title: "css override is driving me crazy"},
+    //   {author:"Aggy", title: "Wechat devtool is not behaving."},
+    //   {author:"Lilian", title: "!%s^&W2i...."},
+    //   {author:"Lilian", title: "!%s^&e2i...."}
+    // ]
   }
 })

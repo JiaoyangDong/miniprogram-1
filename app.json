@@ -12,5 +12,14 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/stories/index",
+      "text": "Stories"
+    }, {
+      "pagePath": "pages/stories/new",
+      "text": "+ Add story"
+    }]
+  }
 }

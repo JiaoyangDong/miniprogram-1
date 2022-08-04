@@ -12,6 +12,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "new",
+          "pathName": "pages/stories/new",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

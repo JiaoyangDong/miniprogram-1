@@ -1,2 +1,9 @@
 <!--pages/stories/show.wxml-->
 <text>pages/stories/show.wxml</text>
+<text class="h2">
+{{story.title}}
+</text>
+
+<text class="p">
+{{story.author}}
+</text>
