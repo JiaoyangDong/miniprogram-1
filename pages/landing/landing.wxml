@@ -1,8 +1,9 @@
 <!--pages/landing/landing.wxml-->
-<view class="banner" style="height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
-  <view class="container">
+<!-- <view class="banner" style="height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);"> -->
+<view class="banner">
+  <view class="container" style="padding-top: 200rpx">
     <text class="h1"> Welcome to FMC </text>
-    <navigator class="btn"
+    <navigator open-type="switchTab" class="btn"
       url="/pages/stories/index"
       style="position: fixed; bottom: 500rpx;"
     > 
